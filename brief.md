@@ -1,3 +1,4 @@
+Version: NAFATH-V2 Track: <one of: Software | AI | Mobile | Networking | Cybersecurity | Data>
 Version: NAFATH-V2 (exactly
 Your track: Software, AI, Mobile, Networking, Cybersecurity or Data
 How the six fields connect in this scenario
