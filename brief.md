@@ -19,9 +19,16 @@ Resource: Android Developers, Build an offline-first app — https://developer.a
 
 Networking
 
+Network slicing allows a 5G operator to create different logical networks on shared equipment. An emergency service could have a slice with settings designed for its traffic, helping it perform better when many people are using the network. However, slicing does not mean the service can never fail. A power outage or a problem in shared infrastructure may still affect it. For that reason, the operator also needs backup systems, monitoring, capacity planning, and regular tests.
+Resource: 3GPP, Network Slicing overview — https://www.3gpp.org/technologies/slicing
+
 Cybersecurity
+If an emergency 5G service is attacked, the team needs to respond in an organized way. It should first recognize and investigate the suspicious activity, then take steps to limit the damage. After that, the team can restore affected systems and check that the service is working properly. What happened should also be reviewed so the same problem is less likely to happen again. NIST's current guidance connects these activities with preparation and wider cybersecurity risk management.
+Resource: NIST SP 800-61 Rev. 3 — https://csrc.nist.gov/pubs/sp/800/61/r3/final
 
 Data
+A star schema puts measurements, such as daily network usage, in a central fact table linked to dimension tables for dates, regions, and services. A snowflake schema splits some of those dimensions into smaller related tables. This reduces repetition but makes queries more complicated. For a dashboard showing daily 5G usage by region, I would start with a star schema because it is simpler to understand and usually easier to report from. The best choice still depends on the data requirements.
+Resource: Microsoft Learn, Star schema guidance — https://learn.microsoft.com/en-us/power-bi/guidance/star-schema/
 
 Misconception in My Track
 
