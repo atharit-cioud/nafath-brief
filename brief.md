@@ -31,5 +31,8 @@ A star schema puts measurements, such as daily network usage, in a central fact 
 Resource: Microsoft Learn, Star schema guidance — https://learn.microsoft.com/en-us/power-bi/guidance/star-schema/
 
 Misconception in My Track
+At first, it is easy to assume that an idempotent HTTP request must return exactly the same response every time. That is not what idempotent means. The important point is that repeating the request has the same intended effect on the server. For example, the first DELETE request might remove a record successfully, while the next one could say the record was not found. In both cases, the record is gone. I also learned that POST requests are not automatically safe to retry, but an API can add an idempotency-key mechanism to help prevent duplicate operations. This is especially useful when a mobile connection drops before the app receives confirmation.
+Resource: RFC 9110, Section 9.2.2 — https://www.rfc-editor.org/rfc/rfc9110.html#section-9.2.2
 
 Open Questio
+If two emergency responders update the same incident while offline, how should the system decide which changes to keep when both devices reconnect?
